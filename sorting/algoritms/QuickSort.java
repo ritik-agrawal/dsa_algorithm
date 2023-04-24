@@ -1,5 +1,7 @@
 package algoritms;
 
+import static tools.Tools.swap;
+
 public class QuickSort implements Sorter {
 
     @Override
@@ -26,12 +28,6 @@ public class QuickSort implements Sorter {
         }
         swap(n, smallMarker+1, high);
         return (smallMarker+1);
-    }
-
-    private void swap(int[] n, Integer a, Integer b){
-        var tmp = n[a];
-        n[a] = n[b];
-        n[b] = tmp;
     }
     
 }

@@ -1,0 +1,53 @@
+0  1  2  3  4  5  6  7
+24 8 42 75 29 77 38 57
+l  j             g  h
+p  k                q
+----------------------
+l    j           g  h
+p    k              q
+----------------------
+l    j           g  h
+p       k           q
+----------------------
+----------------------
+24 8 42 38 29 77 75 57
+----------------------
+l    j        g     h
+p          k        q
+----------------------
+l       j     g     h
+p             k     q
+----------------------
+l    j     g        h
+p                k  q
+
+if (arr[low] > arr[high])
+    swap(arr, low, high);
+int j = low + 1;
+int g = high - 1, k = low + 1,
+    p = arr[low], q = arr[high];
+while (k <= g)
+{
+    if (arr[k] < p)
+    {
+        swap(arr, k, j);
+        j++;
+    } else if (arr[k] >= q){
+        while (arr[g] > q && k < g)
+            g--;
+             
+        swap(arr, k, g);
+        g--;
+         
+        if (arr[k] < p)
+        {
+            swap(arr, k, j);
+            j++;
+        }
+    }
+    k++;
+}
+j--;
+g++;
+swap(arr, low, j);
+swap(arr, high, g);

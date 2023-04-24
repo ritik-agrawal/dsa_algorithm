@@ -1,7 +1,9 @@
 import java.util.Arrays;
 
+import algoritms.DualQuickSort;
 import algoritms.QuickSort;
 import algoritms.Sorter;
+import tools.SingleScanner;
 
 class Solution{
 
@@ -11,7 +13,7 @@ class Solution{
         System.out.println("Get the array to be sorted:");
         var input = sc.nextLine().split(",");
         var nums = Arrays.stream(input).mapToInt(Integer::parseInt).toArray();
-        Sorter sorter = new QuickSort();
+        Sorter sorter = new DualQuickSort();
         sorter.sort(nums);
         for(int i : nums){
             System.out.print(i+" ");
