@@ -1,4 +1,4 @@
-package algoritms;
+package algorithms;
 
 public interface Sorter {
     

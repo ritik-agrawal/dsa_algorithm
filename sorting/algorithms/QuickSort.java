@@ -1,4 +1,4 @@
-package algoritms;
+package algorithms;
 
 import static tools.Tools.swap;
 
