@@ -7,7 +7,8 @@ input used to check the sorting algorithms:
 List of Algorithms implemented:
 - QuickSort 
 - Dual QuickSort
-- Selection sorting
+- Selection Sort
+- Bubble Sort
 
 Notes:
 : https://docs.google.com/document/d/1CLY4YJjXUw1N2m24Xb0pbPGp6PjOA4v_BbeLWkiBXK8/edit?usp=sharing
